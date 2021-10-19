@@ -2,6 +2,7 @@ import VideoPlayer from "./modules/playVideo";
 import MainSlider from "./modules/slider/slider-main";
 import MiniSlider from "./modules/slider/slider-mini";
 import Difference from "./modules/difference";
+import Form from "./modules/forms";
 
 window.addEventListener('DOMContentLoaded', () => {
     
@@ -37,6 +38,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const difference = new Difference('.officerold', '.officernew', '.officer__card-item');
     difference.init();
+
+    const forms = new Form('.form');
+    forms.init();
 
 
     const player = new VideoPlayer('.showup .play', '.overlay');
