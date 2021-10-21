@@ -3,6 +3,7 @@ import MainSlider from "./modules/slider/slider-main";
 import MiniSlider from "./modules/slider/slider-mini";
 import Difference from "./modules/difference";
 import Form from "./modules/forms";
+import ShowInfo from "./modules/showInfo";
 
 window.addEventListener('DOMContentLoaded', () => {
     
@@ -53,5 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new VideoPlayer('.showup .play', '.overlay').init();
     new VideoPlayer('.module__video-item .play', '.overlay').init();
+
+    new ShowInfo('.plus__content').init();
 
 });
